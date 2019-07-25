@@ -1,8 +1,8 @@
-# PDF工具 （未完成）  
+# PDF工具
 用于对PDF文档进行分割、将PDF转换为文字、将PDF转换为图片和识别图片中的文字  
 
 ## 界面
-![程序界面](/示例图片/程序界面.jpg)
+<img width=353px height=300px src="https://github.com/xu-weizhen/Simple-Tools/blob/master/PDF-Tool/%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%87/%E7%A8%8B%E5%BA%8F%E7%95%8C%E9%9D%A2.jpg?raw=true" alt="程序界面" align=center />  
   
 ## 依赖  
 PyQt5 >= 5.11.3  
@@ -42,7 +42,7 @@ pip install requests
   
 点击`图片转文字`，对图片文件夹中的图片中的文字进行识别，识别结果保存在文档中，文档保存路径在当前程序路径下。  
 本程序使用百度API，点击`图片转文字`前需填写`ID、KEY1、KEY2`，相应内容可在[百度智能云](https://cloud.baidu.com/product/ocr)免费申请。程序一次最多可识别1000张图片中的文字。图片文件夹中图片的命名如下图所示，应该为`1.jpg,2.jpg,3.jpg...`，识别时先识别`1.jpg`，然后识别`2.jpg`...图片命名编号可以有缺少，但缺少的编号应小于5，如`1.jpg,4.jpg,5.jpg...`，缺少编号超过5时，程序将停止继续识别并输出识别结果到文件中。  
-![图片命名](/示例图片/图片命名.jpg)  
+<img width=93px height=100px src="https://github.com/xu-weizhen/Simple-Tools/blob/master/PDF-Tool/%E7%A4%BA%E4%BE%8B%E5%9B%BE%E7%89%87/%E5%9B%BE%E7%89%87%E5%91%BD%E5%90%8D.jpg?raw=true" alt="图片命名" align=center />  
   
   
 程序输出的分割后PDF文件、PDF提取文字后的文件和图片文字识别结果文件等的文件名和文件路径在代码80-84行，如有需要可以进行修改。  
