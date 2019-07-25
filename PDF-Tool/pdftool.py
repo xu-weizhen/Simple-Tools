@@ -389,10 +389,9 @@ class Ui_Form(object):
                 word = str(res['words_result'])
                 t = word.split("'}, {'")
                 t2 = ""
-                for i in t:
-                    t2 += i[9:]
+                for i in range(1,len(t)):
+                    t2 += t[i][2:-4]
                     t2 += '\n'
-                t2 = t2[3:-4]
                 t2 += "\n\n"
 
                 try:
